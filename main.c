@@ -28,7 +28,9 @@ int main() {
     int cond_2;
     int row;
     int col;
-    int answer; 
+    int answer;
+    int solve[SIZE][SIZE];
+    int u,see;
 //seeing if he is a new or old user
 while(check_1)
 {  
@@ -100,7 +102,7 @@ while(check_1)
 
     case 3:
         //Meant for the admin to access the portal to see things  like badges and passwords of the users.
-        int see=0;
+        see=0;
 
         //BY DEFAULT THE ADMIN USERID IS: admin AND PASSWORD IS SET AT THE START BY REGISTERING AS ADMIN AND SETTING THE PASSWORD LIKE ANYOTHER USER.
         printf("\nPlease enter your Admin_name:");
@@ -311,9 +313,8 @@ while(check)
 
 
     case 4:
-            //asking the user for any sudoku he wanted to solve an solving it for him
-            int solve[SIZE][SIZE];
-            int u;
+            //asking the user for any sudoku he wanted to solve an solving it for him;
+
             //taking the inputs
             input(solve);
                 printf("\nThe following is the sudoku you entered:");
